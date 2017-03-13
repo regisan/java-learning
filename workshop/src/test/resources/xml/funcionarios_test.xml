@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<empresa>
+	
+	<!-- Lista de funcionários (este comentário vai permanecer no XML gerado) -->
+	
+	<funcionario id="10">
+		<nome>João</nome>
+		<sobrenome>Silva</sobrenome>
+		<dataNasc>15/01/1988</dataNasc>
+		<email>joao.silva@tr.com</email>
+ 		<genero>M</genero> 
+	
+		<dependentes>
+			<dependente id="1">
+				<nomeDep>Julia Silva</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+			<dependente id="2">
+				<nomeDep>Thiago Silva</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+			<dependente id="3">
+				<nomeDep>Helena Silva</nomeDep>
+				<grau>CONJUGE</grau>
+			</dependente>
+		</dependentes>
+	</funcionario>
+	
+	<funcionario id="20">
+		<nome>Maria</nome>
+		<sobrenome>Antonieta</sobrenome>
+		<dataNasc>25/11/1985</dataNasc>
+		<email>maria.antonieta@tr.com</email>
+ 		<genero>F</genero> 
+	
+		
+	</funcionario>
+	
+	<funcionario id="30">
+		<nome>Carlos</nome>
+		<sobrenome>Tomé</sobrenome>
+		<dataNasc>10/07/1970</dataNasc>
+		<email>carlos.tome@tr.com</email>
+ 		<genero>M</genero> 
+	
+		
+	</funcionario>
+	
+	<funcionario id="40">
+		<nome>André</nome>
+		<sobrenome>Moreira</sobrenome>
+		<dataNasc>01/04/1976</dataNasc>
+		<email>andre.moreira@tr.com</email>
+ 		<genero>M</genero> 
+	
+		
+	</funcionario>
+	
+	<funcionario id="50">
+		<nome>Joana</nome>
+		<sobrenome>Prado</sobrenome>
+		<dataNasc>15/01/1972</dataNasc>
+		<email>joana.prado@tr.com</email>
+ 		<genero>F</genero> 
+	
+		<dependentes>
+			<dependente id="4">
+				<nomeDep>Igor Prado</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+		</dependentes>
+	</funcionario>
+	
+	<funcionario id="60">
+		<nome>Márcia</nome>
+		<sobrenome>Figueiredo</sobrenome>
+		<dataNasc>20/10/1979</dataNasc>
+		<email>marcia.figueiredo@tr.com</email>
+ 		<genero>F</genero> 
+	
+		<dependentes>
+			<dependente id="5">
+				<nomeDep>Ana Figueiredo</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+			<dependente id="6">
+				<nomeDep>Bianca Figueiredo</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+		</dependentes>
+	</funcionario>
+	
+	<funcionario id="70">
+		<nome>Silvia</nome>
+		<sobrenome>Teles</sobrenome>
+		<dataNasc>30/09/1980</dataNasc>
+		<email>silvia.teles@tr.com</email>
+ 		<genero>F</genero> 
+	
+		
+	</funcionario>
+	
+	<funcionario id="82">
+		<nome>Marcela</nome>
+		<sobrenome>Lima</sobrenome>
+		<dataNasc>31/07/1981</dataNasc>
+		<email>marcela.lima@tr.com</email>
+ 		<genero>F</genero> 
+	
+		
+	</funcionario>
+	
+	<funcionario id="90">
+		<nome>Pedro</nome>
+		<sobrenome>Gonçalves</sobrenome>
+		<dataNasc>12/02/1977</dataNasc>
+		<email>pedro.goncalves@tr.com</email>
+ 		<genero>M</genero> 
+	
+		
+	</funcionario>
+	
+	<funcionario id="100">
+		<nome>Rita</nome>
+		<sobrenome>Oliveira</sobrenome>
+		<dataNasc>07/12/1975</dataNasc>
+		<email>rita.oliveira@tr.com</email>
+ 		<genero>F</genero> 
+	
+		<dependentes>
+			<dependente id="7">
+				<nomeDep>Luis Oliveira</nomeDep>
+				<grau>CONJUGE</grau>
+			</dependente>
+			<dependente id="8">
+				<nomeDep>Joaquim Oliveira</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+			<dependente id="9">
+				<nomeDep>Rute Oliveira</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+			<dependente id="10">
+				<nomeDep>Yara Oliveira</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+			<dependente id="11">
+				<nomeDep>Matheus Oliveira</nomeDep>
+				<grau>FILHO</grau>
+			</dependente>
+		</dependentes>
+	</funcionario>
+	
+	<funcionario id="110">
+		<nome>Caio</nome>
+		<sobrenome>Trajano</sobrenome>
+		<dataNasc>09/03/1983</dataNasc>
+		<email>caio.trajano@tr.com</email>
+ 		<genero>M</genero> 
+	
+		
+	</funcionario>
+	
+	<funcionario id="120">
+		<nome>Bruna</nome>
+		<sobrenome>Pinheiro</sobrenome>
+		<dataNasc>13/05/1987</dataNasc>
+		<email>bruna.pinheiro@tr.com</email>
+ 		<genero>F</genero> 
+	
+		
+	</funcionario>
+	
+</empresa>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:th="http://www.thymeleaf.org">
+	
+	<!-- Lista de funcionários (este comentário vai permanecer no XML gerado) -->
+	
+	<funcionario th:each="func : ${funcionarios}" th:attr="id=${func.id}">
+		<nome th:utext="${func.nome}">Nome</nome>
+		<sobrenome th:utext="${func.sobrenome}">Sobrenome</sobrenome>
+		<dataNasc th:text="${#dates.format(func.dataNascimento, 'dd/MM/yyyy')}">Data de nascimento</dataNasc>
+		<email th:text="${func.email}">seu@email.aqui</email>
+ 		<genero th:text="${func.genero}" /> 
+	
+		<dependentes th:if="${func.dependentes.size > 0}">
+			<dependente th:each="dep : *{func.dependentes}" th:attr="id=${dep.id}">
+				<nomeDep th:utext="${dep.nome}">nome dependente</nomeDep>
+				<grau th:text="${dep.grauParentesco}">Grau de parentesco (CONJUGE | FILHO)</grau>
+			</dependente>
+		</dependentes>
+	</funcionario>
+	<!--/* FIM DE ARQUIVO (este comentário vai ser removido do XML gerado) */-->
+</empresa>
