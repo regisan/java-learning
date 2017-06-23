@@ -34,13 +34,4 @@ public class EstoqueWSImpl implements EstoqueWS {
 		response.setItem(parameters.getItem());
 		return response;
 	}
-
-	private static Item geraItem() {
-		Item item = new Item();
-		item.setCodigo("MEA");
-		item.setNome("MEAN");
-		item.setQuantidade(5);
-		item.setTipo("Livro");
-		return item;
-	}
 }
