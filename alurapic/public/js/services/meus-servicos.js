@@ -9,9 +9,10 @@ angular.module('meusServicos', ['ngResource'])
     .factory('recursoGrupo', function($resource, $q) {
         return $resource('v1/grupos');
     })
-    .factory('cadastroDeFotos', function(recursoFoto, $q) {
+    .factory('cadastroDeFotos', function(recursoFoto, $q, $rootScope) {
 
         var servico = {};
+        var evento = 'fotoCadastrada';
 
         servico.cadastrar = function(foto) {
             return $q(function(resolve, reject) {
@@ -22,6 +23,7 @@ angular.module('meusServicos', ['ngResource'])
                                 mensagem: 'Foto ' + foto.titulo + ' atualizada com sucesso.',
                                 inclusao: false
                             });
+                            $rootScope.$broadcast(evento);
                         },
                         function(erro) {
                             console.log(erro);
@@ -38,6 +40,7 @@ angular.module('meusServicos', ['ngResource'])
                                 mensagem: 'Foto ' + foto.titulo + ' inserida com sucesso!',
                                 inclusao: true
                             });
+                            $rootScope.$broadcast(evento);
                         },
                         function(erro) {
                             console.log(erro);
