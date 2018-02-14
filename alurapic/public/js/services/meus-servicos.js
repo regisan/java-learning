@@ -9,14 +9,14 @@ angular.module('meusServicos', ['ngResource'])
     .factory('recursoGrupo', function($resource, $q) {
         return $resource('v1/grupos');
     })
-    .factory('cadastroDeFotos', function(recursoFoto) {
+    .factory('cadastroDeFotos', function(recursoFoto, $q) {
 
         var servico = {};
 
         servico.cadastrar = function(foto) {
             return $q(function(resolve, reject) {
                 if (foto._id) {
-                    recursoFoto.update({ fotoId : foto.Id }, foto, 
+                    recursoFoto.update({ fotoId : foto._id }, foto, 
                         function() {
                             resolve({
                                 mensagem: 'Foto ' + foto.titulo + ' atualizada com sucesso.',
