@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+	<id>1234</id>
+	<itens>
+		<item>
+			<codigo>MXP</codigo>
+			<descricao>Moto X Play</descricao>
+			<quantidade>1</quantidade>
+			<valorUnitario>1000</valorUnitario>
+		</item>
+	</itens>
+</pedido>
